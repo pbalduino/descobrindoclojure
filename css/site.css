@@ -15,3 +15,7 @@ body {
 .text-clojure-dark-green {
   color: #62B132!important;
 }
+
+img.img-cover {
+  border: solid 1px #5881D8;
+}
