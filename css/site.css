@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .bg-primary {
   background-color: #5881D8!important;
 }
 
 .text-clojure-dark-blue {
   color: #5881D8!important;
+}
+
+.text-clojure-dark-green {
+  color: #62B132!important;
 }
