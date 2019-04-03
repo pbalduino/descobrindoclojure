@@ -4,6 +4,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+li a {
+  color: #5881D8!important;
+}
+
 .bg-primary {
   background-color: #5881D8!important;
 }
