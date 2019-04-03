@@ -8,6 +8,10 @@ body {
   background-color: #5881D8!important;
 }
 
+.bg-secondary {
+  background-color: #62B132!important;
+}
+
 .text-clojure-dark-blue {
   color: #5881D8!important;
 }
