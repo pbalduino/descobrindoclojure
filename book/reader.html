@@ -14,16 +14,49 @@
 </head>
 
 <script type="text/javascript">
-  fetch('json/00-dedicatoria.json')
+  const book = document.getElementById("book");
+
+  const render = {
+    "text": (content) => {
+      console("text", content);
+      return "<span class='text'>" + content + "</span>";
+    },
+    "chapter": (data) => {
+      console.log("chapter", data);
+      if(content !== null) {
+        for(let l = 0; l < content.length; l++) {
+          document.append(reader[data['tag']](data['content']))
+        }
+      }
+    },
+    "paragraph": (content) => {
+      console.log("paragraph", content);
+    },
+    "quote": (content) => {
+      console.log("quote", content);
+    }
+  };
+
+  fetch('json/0000.json')
     .then(function(response) {
       return response.json();
     })
     .then(function(json) {
-      console.log(json);
+      console.log('content', json['content']);
+
+      for(let i = 0; i < json['content'].length; i++) {
+        console.log(i, render[json['content'][i]['tag']]);
+        const tag = json['content'][i]['tag'];
+        const f = render[tag];
+        console.log(tag, f);
+        render[json['content'][i]['tag']](json['content'][i]['content']);
+      }
     })
 </script>
 
 <body>
+  <div id="book">
+  </div>
 </body>
 
 </html>
