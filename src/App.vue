@@ -1,11 +1,29 @@
+<template>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'app'
+}
+</script>
+
+<style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3 a, li a {
+li a {
   color: #5881D8!important;
+}
+
+h1 a {
+  color: #f8f9fa!important;
 }
 
 .bg-primary {
@@ -31,3 +49,4 @@ h3 a, li a {
 img.img-cover {
   border: solid 1px #5881D8;
 }
+</style>
