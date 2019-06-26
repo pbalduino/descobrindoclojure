@@ -4,7 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-li a {
+h3 a, li a {
   color: #5881D8!important;
 }
 
