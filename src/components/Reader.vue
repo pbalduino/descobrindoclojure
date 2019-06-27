@@ -4,7 +4,7 @@
 
     <div class="container">
       <div class="row">
-        <h1>Leitor</h1>
+        <h1>{{$route.params.chapter}}</h1>
       </div>
       <div class="row">
         <p>Aqui vem o conteúdo do livro</p>

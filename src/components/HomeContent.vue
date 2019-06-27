@@ -24,7 +24,7 @@
       <li>Sobre a versão online</li>
       <li>Introdução</li>
       <ul>
-        <li><router-link to="/dedication">Dedicatória</router-link></li>
+        <li><router-link to="/reader/dedication">Dedicatória</router-link></li>
         <li>Prefácio</li>
         <li>Agradecimentos</li>
         <li><a href="book/sobre_o_autor.html">Sobre o autor</a></li>

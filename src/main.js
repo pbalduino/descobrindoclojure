@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home.vue'
-import Dedication from './components/Dedication.vue'
+import Reader from './components/Reader.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -10,10 +10,8 @@ Vue.use(VueRouter)
 const routes = [
   {path: '/',
    component: Home},
-  {path: '/dedication',
-   component: Dedication}.
-  {path: '/author',
-   component: Author}
+  {path: '/reader/:chapter',
+   component: Reader}
 ];
 
 const router = new VueRouter({
