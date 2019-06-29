@@ -19,6 +19,10 @@ const routes = [
   {
     path: '/reader/:chapter',
     component: Reader
+  },
+  {
+    path: '/:chapter',
+    component: Reader
   }
 ];
 
