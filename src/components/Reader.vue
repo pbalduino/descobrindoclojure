@@ -2,28 +2,32 @@
   <div>
     <LittleHeader />
 
-    <div class="container">
+    <div class="container" v-if="$store.book && $store.book.chapter[$route.params.chapter]">
       <div class="row">
         <h1>{{$route.params.chapter}}</h1>
       </div>
       <div class="row">
-        <p>Aqui vem o conteúdo do livro</p>
+        {{ store.book.chapter[$route.params.chapter] }}
       </div>
     </div>
-
+    <div class="container" v-else>
+      <NotFound />
+    </div>
     <LittleFooter />
   </div>
 </template>
 
 <script>
-import LittleFooter from './LittleFooter.vue';
-import LittleHeader from './LittleHeader.vue';
+import LittleFooter from '@/components/LittleFooter.vue'
+import LittleHeader from '@/components/LittleHeader.vue'
+import NotFound from '@/components/NotFound'
 
 export default {
-  name: 'Dedication',
+  name: 'Reader',
   components: {
     LittleFooter,
-    LittleHeader
+    LittleHeader,
+    NotFound
   }
 }
 </script>

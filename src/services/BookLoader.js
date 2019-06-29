@@ -13,4 +13,8 @@ const getIndex = () => {
   return api.get('index.json')
 }
 
-export default { getIndex }
+const readFile = (file) => {
+  return api.get(file)
+}
+
+export default { getIndex, readFile }

@@ -1,8 +1,21 @@
 {
   "locations": [
-    {
-      "id": "dedication",
-      "file": "0000.json"
-    }
+    "0000.json",
+    "0001.json",
+    "0002.json",
+    "0003.json",
+    "0004.json",
+    "0101.json",
+    "0102.json",
+    "0103.json",
+    "0104.json",
+    "0105.json",
+    "0106.json",
+    "0107.json",
+    "0108.json",
+    "0109.json",
+    "0111.json",
+    "0125.json",
+    "0130.json"
   ]
 }
