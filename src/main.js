@@ -1,6 +1,7 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 import VueRouter from 'vue-router'
+import Vuex from 'vuex'
+
 import App from '@/App.vue'
 import Home from '@/components/Home.vue'
 import Reader from '@/components/Reader.vue'

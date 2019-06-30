@@ -11,6 +11,9 @@ export default () => {
     mutations: {
       setIndex(state, newIndex) {
         state.index = newIndex
+      },
+      setBook(state, newBook) {
+        state.book = newBook
       }
     },
     actions: {
@@ -20,17 +23,29 @@ export default () => {
           .then(async ({ data }) => {
             let chapters = data.locations.map(async (file) => {
               const result = await BookLoader.readFile(file)
-              console.log(file, result.data)
               return result.data
             })
 
-            const resolvedChapter = await Promise.all(chapters); // resolving all promises
+            const resolvedChapter = await Promise.all(chapters);
             return resolvedChapter
           })
           .then((data) => {
-            console.log("ok", data);
-          });
+            return data.reduce((acc, {tag, content}) => {
+              if(tag !== "document") {
+                console.error("Not a document. Failing");
+                throw "Not a document"
+              }
+              let chapter = {name: (content[0].content ? content[0].content[0].content[0] : "").trim()}
+              console.log(acc, content, chapter)
+              acc.push(chapter)
+              return acc
+            }, [])
+          })
+          .then((data) => {
+            console.log("commit", data)
+            commit('setBook', data)
+          })
       }
     }
-  });
+  })
 }
