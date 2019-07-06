@@ -9,6 +9,7 @@ import Home from '@/components/Home.vue'
 import Reader from '@/components/Reader.vue'
 
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
+import Dedication from '@/components/book/Dedication.vue'
 
 Vue.config.productionTip = false;
 
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/online',
     component: OnlineVersion
+  },
+  {
+    path: '/dedication',
+    component: Dedication
   },
   {
     path: '/:chapter',

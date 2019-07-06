@@ -49,7 +49,6 @@ E vem muito mais por aí
 </template>
 
 <script>
-
 export default {
   name: 'Index'
 }
