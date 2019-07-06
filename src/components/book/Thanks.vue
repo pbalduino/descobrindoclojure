@@ -6,10 +6,14 @@
         <div class="col-sm text-clojure-dark-blue">
           <h1>Agradecimentos</h1>
 
-          [chapter Agradecimentos]
+          <blockquote class="blockquote">
 
-          [quote "If the path before you is clear, you're probably on someone else's."
-            -- Joseph Campbell]
+          <p class="mb-0">
+          "If the path before you is clear, you're probably on someone else's."
+          </p>
+          <footer class="blockquote-footer">Joseph Campbell</footer>
+
+          </blockquote>
 
           <p class="text-justify">Escrever um livro sobre Clojure em Português, utilizando material original e de uma forma que torne a linguagem acessível mesmo para quem nunca ouviu falar em programação funcional é um trabalho imenso e demorado que eu não teria conseguido concluir sozinho.</p>
 
