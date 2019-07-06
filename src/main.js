@@ -19,6 +19,10 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter)
 Vue.use(Vuex)
 
+const isProd = process.env.NODE_ENV === 'production'
+
+console.log("Production", isProd)
+
 const routes = [
   {
     path: '/',
@@ -80,6 +84,10 @@ Vue.use(VueAnalytics, {
   id: 'UA-137706670-1',
   autoTracking: {
     screenview: true
+  },
+  debug: {
+    enabled: !isProd,
+    sendHitTask: isProd
   },
   router
 })
