@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
+import VueAnalytics from 'vue-analytics'
 
 import App from '@/App.vue'
 import Store from '@/services/Store'
@@ -56,11 +57,19 @@ const router = new VueRouter({
   }
 });
 
+Vue.use(VueAnalytics, {
+  id: 'UA-137706670-1',
+  autoTracking: {
+    screenview: true
+  },
+  router
+})
+
 new Vue({
   router,
   store: Store,
   render: h => h(App),
   created: function() {
-    // this.$store.dispatch('updateIndex');
+
   }
 }).$mount('#app')
