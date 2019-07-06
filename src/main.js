@@ -26,23 +26,28 @@ const routes = [
   },
   {
     path: '/online',
-    component: OnlineVersion
+    component: OnlineVersion,
+    meta: {title: "Sobre a versão online"}
   },
   {
     path: '/dedication',
-    component: Dedication
+    component: Dedication,
+    meta: {title: "Dedicatória"}
   },
   {
     path: '/foreword',
-    component: Foreword
+    component: Foreword,
+    meta: {title: "Prefácio"}
   },
   {
     path: '/thanks',
-    component: Thanks
+    component: Thanks,
+    meta: {title: "Agradecimentos"}
   },
   {
     path: '/:chapter',
-    component: Reader
+    component: Reader,
+    meta: {title: ":("}
   }
 ];
 
@@ -50,12 +55,26 @@ const router = new VueRouter({
   routes,
   scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
+        return savedPosition;
     }
+    if (to.hash) {
+        return { selector: to.hash };
+    }
+    return { x: 0, y: 0 };
   }
 });
+
+router.beforeEach((to, from, next) => {
+  const TITLE = 'Descobrindo Clojure'
+
+  if(to.meta.title) {
+    document.title = `${TITLE} - ${to.meta.title}`
+  } else {
+    document.title = `${TITLE}`
+  }
+
+  next()
+})
 
 Vue.use(VueAnalytics, {
   id: 'UA-137706670-1',
@@ -64,6 +83,7 @@ Vue.use(VueAnalytics, {
   },
   router
 })
+
 
 new Vue({
   router,
