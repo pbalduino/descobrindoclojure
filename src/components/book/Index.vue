@@ -8,7 +8,7 @@
   <ul>
     <li><router-link to="/dedication">Dedicatória</router-link></li>
     <li><router-link to="/foreword">Prefácio</router-link></li>
-    <li>Agradecimentos</li>
+    <li><router-link to="/thanks">Agradecimentos</router-link></li>
     <li>Sobre o autor</li>
     <li>Aviso</li>
   </ul>

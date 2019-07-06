@@ -11,6 +11,7 @@ import Reader from '@/components/Reader.vue'
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
 import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
+import Thanks from '@/components/book/Thanks.vue'
 
 Vue.config.productionTip = false;
 
@@ -33,6 +34,10 @@ const routes = [
   {
     path: '/foreword',
     component: Foreword
+  },
+  {
+    path: '/thanks',
+    component: Thanks
   },
   {
     path: '/:chapter',
