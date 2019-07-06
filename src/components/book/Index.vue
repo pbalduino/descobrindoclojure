@@ -7,9 +7,9 @@
   <li>Introdução</li>
   <ul>
     <li><router-link to="/dedication">Dedicatória</router-link></li>
-    <li>Prefácio</li>
+    <li><router-link to="/foreword">Prefácio</router-link></li>
     <li>Agradecimentos</li>
-    <li><a href="book/sobre_o_autor.html">Sobre o autor</a></li>
+    <li>Sobre o autor</li>
     <li>Aviso</li>
   </ul>
   <li>Apresentação</li>

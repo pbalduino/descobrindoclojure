@@ -10,6 +10,7 @@ import Reader from '@/components/Reader.vue'
 
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
 import Dedication from '@/components/book/Dedication.vue'
+import Foreword from '@/components/book/Foreword.vue'
 
 Vue.config.productionTip = false;
 
@@ -28,6 +29,10 @@ const routes = [
   {
     path: '/dedication',
     component: Dedication
+  },
+  {
+    path: '/foreword',
+    component: Foreword
   },
   {
     path: '/:chapter',
