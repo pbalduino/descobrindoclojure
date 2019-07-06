@@ -2,7 +2,7 @@
 <div class="col-sm mr-1 text-clojure-dark-blue">
   <a name="toc" />
   <h3>Quero ler online</h3>
-  <ol>
+  <ul>
   <li><router-link to="/online">Sobre a versão online</router-link></li>
   <li>Introdução</li>
   <ul>
@@ -12,6 +12,8 @@
     <li>Sobre o autor</li>
     <li>Aviso</li>
   </ul>
+  </ul>
+  <ol>
   <li>Apresentação</li>
   <ul>
     <li>Por que Clojure?</li>
