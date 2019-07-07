@@ -12,7 +12,7 @@
 
           <p class="text-justify">No último capítulo há uma lista com os links dos sites citados aqui e mais alguns muito interessantes para o desenvolvedor Clojure.</p>
 
-          <img class="img-fluid img-cover" :src="'./img/author.jpg'" alt="O autor, de acordo com seu filho de quatro anos" />
+          <img class="img-fluid img-cover" :src="'./img/autor.jpg'" alt="Autor falando sobre Clojure na QCon SP 2013" />
         </div>
       </div>
     </div>
