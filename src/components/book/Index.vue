@@ -10,7 +10,7 @@
     <li><router-link to="/foreword">Prefácio</router-link></li>
     <li><router-link to="/thanks">Agradecimentos</router-link></li>
     <li><router-link to="/author">Sobre o autor</router-link></li>
-    <li>Aviso</li>
+    <li><router-link to="/warning">Aviso</router-link></li>
   </ul>
   </ul>
   <ol>

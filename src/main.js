@@ -15,6 +15,7 @@ import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
 import Thanks from '@/components/book/Thanks.vue'
+import Warning from '@/components/book/Warning.vue'
 
 Vue.config.productionTip = false;
 
@@ -51,18 +52,35 @@ const routes = [
     component: Dedication,
     meta: {
       previous: '/online',
+      next: '/foreword',
       title: 'Dedicatória'
     }
   },
   {
     path: '/foreword',
     component: Foreword,
-    meta: {title: 'Prefácio'}
+    meta: {
+      previous: '/dedication',
+      next: '/thanks',
+      title: 'Prefácio'
+    }
   },
   {
     path: '/thanks',
     component: Thanks,
-    meta: {title: 'Agradecimentos'}
+    meta: {
+      previous: '/foreword',
+      next: '/warning',
+      title: 'Agradecimentos'
+    }
+  },
+  {
+    path: '/warning',
+    component: Warning,
+    meta: {
+      previous: '/thanks',
+      title: 'Aviso'
+    }
   },
   {
     path: '/:chapter',
@@ -124,7 +142,9 @@ const app = new Vue({
       const meta = this.$route.meta
 
       if(meta) {
-        if((key === 'ArrowRight' || key === 'k') && meta.next) {
+        if((key === 'Home' || key === 'h')) {
+          this.$router.push('/')
+        } else if((key === 'ArrowRight' || key === 'k') && meta.next) {
           this.$router.push(meta.next)
         } else if((key === 'ArrowLeft' || key === 'j') && meta.previous) {
           this.$router.push(meta.previous)
