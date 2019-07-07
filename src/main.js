@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
@@ -115,38 +113,61 @@ const app = new Vue({
   router,
   store: Store,
   render: h => h(App),
+  data: function() {
+    return {
+      swipeX: -1
+    }
+  },
   methods: {
-    handleGlobalKeyDown: function(event) {
+    handleGlobalKeyUp: function(event) {
       const key = event.key
       const meta = this.$route.meta
 
       if(meta) {
         if((key === 'ArrowRight' || key === 'k') && meta.next) {
-          this. $router.push(meta.next)
+          this.$router.push(meta.next)
         } else if((key === 'ArrowLeft' || key === 'j') && meta.previous) {
-          this. $router.push(meta.previous)
+          this.$router.push(meta.previous)
         }
       }
+    },
+    handleTouchStart: function(event) {
+      this.$data.swipeX = event.changedTouches[0].clientX;
+    },
+    handleTouchEnd: function(event) {
+      const meta = this.$route.meta
+
+      if(this.$data.swipeX - 100 >= event.changedTouches[0].clientX  && meta.next) {
+        this.$data.swipeX = -1;
+        this.$router.push(meta.next)
+      } else if(this.$data.swipeX + 100 <= event.changedTouches[0].clientX && meta.previous) {
+        this.$data.swipeX = -1;
+        this.$router.push(meta.previous)
+      }
     }
+
   }
 }).$mount('#app')
 
-window.addEventListener('mouseup', function(e) {
-  alert("mouseup");
-  console.log('mouseup', event);
+
+window.addEventListener('keyup', function(event) {
+  app.handleGlobalKeyUp(event);
 });
 
+// window.addEventListener('mouseup', function(e) {
+//   alert("mouseup");
+//   console.log('mouseup', event);
+// });
+
 document.addEventListener('touchstart', function(event) {
-  alert("touchstart");
-  console.log('touchstart', event);
+  app.handleTouchStart(event);
 });
 
 document.addEventListener('touchend', function(event) {
-  alert("touchend")
-  console.log('touchend', event);
+  app.handleTouchEnd(event);
 });
 
-document.addEventListener('touchmove', function(event) {
-  alert("touchmove")
-  console.log('touchmove', event);
-}, false);
+// document.addEventListener('touchmove', function(event) {
+//   alert("touchmove")
+//   console.log('touchmove', event);
+// }, false);
