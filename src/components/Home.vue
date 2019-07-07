@@ -3,6 +3,7 @@
     <BigHeader />
     <HomeContent />
     <BigFooter />
+    <Version />
   </div>
 </template>
 
