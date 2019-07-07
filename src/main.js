@@ -169,15 +169,18 @@ const app = new Vue({
   }
 }).$mount('#app')
 
+router.afterEach((to, from) => {
+  app.$ga.page({
+    page: to.fullPath,
+    title: document.title,
+    location: `${window.location.origin}/#${to.fullPath}`
+  })
+})
+
 
 window.addEventListener('keyup', function(event) {
   app.handleGlobalKeyUp(event);
 });
-
-// window.addEventListener('mouseup', function(e) {
-//   alert("mouseup");
-//   console.log('mouseup', event);
-// });
 
 document.addEventListener('touchstart', function(event) {
   app.handleTouchStart(event);
@@ -186,8 +189,3 @@ document.addEventListener('touchstart', function(event) {
 document.addEventListener('touchend', function(event) {
   app.handleTouchEnd(event);
 });
-
-// document.addEventListener('touchmove', function(event) {
-//   alert("touchmove")
-//   console.log('touchmove', event);
-// }, false);
