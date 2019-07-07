@@ -29,8 +29,6 @@
 
           <p class="text-justify">Thank you very much Joshua Glover, Chas Emerick, Michael Fogus, Bozhidar Batsov, Zachary Kim, Tom and Rich Hickey, Leonardo Borges and all the people from Clojure list.</p>
 
-          <a name="#paulo" />
-
           <p class="text-justify">Paulo Silveira, Adriano Almeida e Igor Hercowitz, que compraram a ideia maluca de lançar um livro sobre Clojure num momento em que ela parecia maluca.</p>
 
           <p class="text-justify">Nicolas França, João Ferreira, Rodrigo Lorca, Ricardo Valeriano, Ana Gabriel, Rodrigo Flores, Edilson Peçanha, Andrew Rosa, Renan Reis, Gilmar Soares, que foram revisores de primeira hora e tiveram a honestidade de apontar onde a coisa não estava boa.</p>

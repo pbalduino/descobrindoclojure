@@ -5,6 +5,8 @@
       <div class="row">
         <div class="col-sm text-clojure-dark-blue">
           <h1>Sobre a versão online</h1>
+          <h2>Instruções</h2>
+          <h2>Prefácio da versão online</h2>
           <p class="text-justify">
           Quando comecei a escrever este livro há alguns anos, havia uma total
           falta de material em Português, com exceção de alguns posts em blogs
