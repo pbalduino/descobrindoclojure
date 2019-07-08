@@ -1,5 +1,5 @@
 <template>
-<div class="col-sm mr-1 text-clojure-dark-blue">
+<div class="col-sm mr-1 text-clojure-dark-blue" id="index">
   <a name="toc" />
   <h3>Quero ler online</h3>
   <ul>

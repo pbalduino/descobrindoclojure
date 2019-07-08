@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="version">
 <small>Versão: {{ GitHash }}</small>
 </div>
 </template>

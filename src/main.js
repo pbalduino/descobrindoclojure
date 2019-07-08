@@ -1,11 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Vuex from 'vuex'
 import VueAnalytics from 'vue-analytics'
-import VueShortcuts from 'vue-shortcuts'
 
 import App from '@/App.vue'
-import Store from '@/services/Store'
 
 import Home from '@/components/Home.vue'
 import Reader from '@/components/Reader.vue'
@@ -20,8 +17,6 @@ import Warning from '@/components/book/Warning.vue'
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter)
-Vue.use(Vuex)
-Vue.use(VueShortcuts, { prevent: ['input'] })
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -129,7 +124,6 @@ Vue.use(VueAnalytics, {
 
 const app = new Vue({
   router,
-  store: Store,
   render: h => h(App),
   data: function() {
     return {
@@ -169,7 +163,7 @@ const app = new Vue({
   }
 }).$mount('#app')
 
-router.afterEach((to, from) => {
+router.afterEach((to) => {
   app.$ga.page({
     page: to.fullPath,
     title: document.title,

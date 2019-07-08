@@ -5,20 +5,22 @@
   "scripts": {
     "serve": "echo \"\\\"$(git describe --always)\\\"\" > src/assets/hash.json && vue-cli-service serve",
     "build": "echo \"\\\"$(git describe --always)\\\"\" > src/assets/hash.json && vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "mocha-webpack --webpack-config webpack.config.js --require test/setup.js test/**/*.spec.js",
+    "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-analytics": "^5.17.0",
-    "vue-router": "^3.0.6",
-    "vuex": "^3.1.1"
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.9.2",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
+    "nightwatch": "^1.1.13",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
