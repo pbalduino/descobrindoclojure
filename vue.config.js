@@ -1,4 +1,7 @@
 module.exports = {
   "outputDir": "docs",
-  "productionSourceMap": false
+  "productionSourceMap": false,
+  configureWebpack: {
+    plugins: []
+  }
 }
