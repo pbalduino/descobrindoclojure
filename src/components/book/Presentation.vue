@@ -36,7 +36,7 @@
 
   <p class="text-justify">Mas, além de todas essas vantagens, eu vou dizer a você que Clojure é uma linguagem que além de divertida e expressiva, aumenta consideravelmente seu arsenal de técnicas para resolver problemas, mesmo que no dia a dia você acabe utilizando qualquer outra linguagem.</p>
 
-  <h2>Para quem é esse livro</h2>
+  <h2>1.2 Para quem é esse livro</h2>
 
   <p class="text-justify">Este livro foi escrito para quem que já tem alguma experiência com desenvolvimento de software e compreende conceitos básicos como operadores lógicos, desvios condicionais, estruturação de código em funções, módulos e classes.</p>
 
@@ -44,7 +44,7 @@
 
   <p class="text-justify">Finalmente, não é necessário qualquer conhecimento prévio de LISP, Clojure ou fundamentos de programação funcional. O propósito deste livro é justamente te guiar através desses conceitos sem cair nas armadilhas do jargão acadêmico.</p>
 
-  <h2>Como o livro está organizado</h2>
+  <h2>1.3 Como o livro está organizado</h2>
 
   <p class="text-justify">No mercado de livros técnicos, existem duas formas muito comuns:</p>
 
@@ -74,7 +74,7 @@
 
   <p class="text-justify"><code>Trechos em fonte monoespaçada</code> indicam código, nomes de arquivos, classes ou <i>namespaces</i>.</p>
 
-  <h2>Lista de discussão e código fonte</h2>
+  <h2>1.4 Lista de discussão e código fonte</h2>
 
   <p class="text-justify">Disponibilizamos uma lista de discussão sobre o livro, onde você pode tirar suas dúvidas, apontar correções, indicar melhorias e o que mais achar relevante para o outros leitores:</p>
 

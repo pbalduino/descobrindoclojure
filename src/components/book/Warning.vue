@@ -11,7 +11,7 @@
     </p>
 
     <p class="text-justify">
-    Foram relatados casos de euforia por conta de um evento chamado ::iluminação::, onde o desenvolvedor subitamente entende a forma funcional de pensar.
+    Foram relatados casos de euforia por conta de um evento chamado <i>iluminação</i>, onde o desenvolvedor subitamente entende a forma funcional de pensar.
     </p>
 
     <p class="text-justify">
