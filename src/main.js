@@ -5,6 +5,7 @@ import VueAnalytics from 'vue-analytics'
 import App from '@/App.vue'
 
 import Home from '@/components/Home.vue'
+import Page from '@/components/Page.vue'
 import Reader from '@/components/Reader.vue'
 import ChapterQuote from '@/components/ChapterQuote.vue'
 
@@ -22,6 +23,7 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter)
 
 Vue.component('chapter-quote', ChapterQuote)
+Vue.component('page', Page)
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -41,11 +43,6 @@ const routes = [
       previous: '/',
       title: 'Sobre a versão online'
     }
-  },
-  {
-    path: '/author',
-    component: Author,
-    meta: {title: 'Sobre o autor'}
   },
   {
     path: '/dedication',
@@ -70,15 +67,24 @@ const routes = [
     component: Thanks,
     meta: {
       previous: '/foreword',
-      next: '/warning',
+      next: '/author',
       title: 'Agradecimentos'
+    }
+  },
+  {
+    path: '/author',
+    component: Author,
+    meta: {
+      previous: '/thanks',
+      next: '/warning',
+      title: 'Sobre o autor'
     }
   },
   {
     path: '/warning',
     component: Warning,
     meta: {
-      previous: '/thanks',
+      previous: '/author',
       next: '/presentation',
       title: 'Aviso'
     }
