@@ -12,9 +12,6 @@ describe('ChapterQuote.vue', () => {
                   work: work},
       slots: {
         default: [quote]
-      },
-      directives: {
-        title: {}
       }
     })
     expect(wrapper.text()).toMatch(`${quote} ${author} ${work}`)
@@ -25,9 +22,6 @@ describe('ChapterQuote.vue', () => {
       propsData: {author: author},
       slots: {
         default: [quote]
-      },
-      directives: {
-        title: {}
       }
     })
     expect(wrapper.text()).toMatch(`${quote} ${author}`)

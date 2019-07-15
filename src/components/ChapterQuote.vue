@@ -7,6 +7,9 @@
 
 <script>
 export default {
-  props: ['author', 'work']
+  props: ['author', 'work'],
+  directives: {
+    title: {}
+  }
 }
 </script>
