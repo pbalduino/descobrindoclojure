@@ -14,7 +14,7 @@
   </ul>
   </ul>
   <ol>
-  <li>Apresentação</li>
+  <li><router-link to="/presentation">Apresentação</router-link></li>
   <ul>
     <li>Por que Clojure?</li>
     <li>Para quem é esse livro</li>

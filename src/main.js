@@ -6,17 +6,22 @@ import App from '@/App.vue'
 
 import Home from '@/components/Home.vue'
 import Reader from '@/components/Reader.vue'
+import ChapterQuote from '@/components/ChapterQuote.vue'
 
 import Author from '@/components/book/Author.vue'
 import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
+import Presentation from '@/components/book/Presentation.vue'
 import Thanks from '@/components/book/Thanks.vue'
 import Warning from '@/components/book/Warning.vue'
+
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter)
+
+Vue.component('chapter-quote', ChapterQuote)
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -74,7 +79,16 @@ const routes = [
     component: Warning,
     meta: {
       previous: '/thanks',
+      next: '/presentation',
       title: 'Aviso'
+    }
+  },
+  {
+    path: '/presentation',
+    component: Presentation,
+    meta: {
+      previous: '/warning',
+      title: 'Apresentação'
     }
   },
   {
