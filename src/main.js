@@ -4,6 +4,7 @@ import VueAnalytics from 'vue-analytics'
 
 import App from '@/App.vue'
 
+import Box from '@/components/Box.vue'
 import Home from '@/components/Home.vue'
 import Page from '@/components/Page.vue'
 import Reader from '@/components/Reader.vue'
@@ -22,6 +23,7 @@ Vue.config.productionTip = false;
 
 Vue.use(VueRouter)
 
+Vue.component('box', Box)
 Vue.component('chapter-quote', ChapterQuote)
 Vue.component('page', Page)
 

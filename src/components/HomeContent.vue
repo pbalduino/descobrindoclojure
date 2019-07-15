@@ -18,7 +18,7 @@
   </div>
 
   <div class="row">
-    <Index />
+    <ToC />
     <div class="col-sm-3 text-clojure-dark-blue">
       <h3>Quero o livro</h3>
         <p>
@@ -33,12 +33,12 @@
 </template>
 
 <script>
-import Index from './book/Index.vue'
+import ToC from './book/ToC.vue'
 
 export default {
   name: 'HomeContent',
   components: {
-    Index
+    ToC
   }
 }
 </script>

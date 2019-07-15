@@ -52,6 +52,6 @@ E vem muito mais por aí
 
 <script>
 export default {
-  name: 'Index'
+  name: 'ToC'
 }
 </script>

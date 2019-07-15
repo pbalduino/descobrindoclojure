@@ -36,9 +36,9 @@ h1 a {
   background-color: #62B132!important;
 }
 
-.bg-light {
+/*.bg-light {
   background-color: #8FB5FE!important;
-}
+}*/
 
 .text-clojure-dark-blue {
   color: #5881D8!important;
