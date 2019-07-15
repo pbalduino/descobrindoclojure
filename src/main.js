@@ -4,8 +4,10 @@ import VueAnalytics from 'vue-analytics'
 
 import App from '@/App.vue'
 
+import BibliographyEntry from '@/components/BibliographyEntry.vue'
 import Box from '@/components/Box.vue'
 import Home from '@/components/Home.vue'
+import IndexEntry from '@/components/IndexEntry.vue'
 import Page from '@/components/Page.vue'
 import Reader from '@/components/Reader.vue'
 import ChapterQuote from '@/components/ChapterQuote.vue'
@@ -23,6 +25,8 @@ Vue.config.productionTip = false;
 
 Vue.use(VueRouter)
 
+Vue.component('bib', BibliographyEntry)
+Vue.component('index', IndexEntry)
 Vue.component('box', Box)
 Vue.component('chapter-quote', ChapterQuote)
 Vue.component('page', Page)

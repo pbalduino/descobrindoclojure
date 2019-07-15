@@ -26,7 +26,7 @@
 
   <p class="text-justify">Eu poderia também apontar que Clojure naturalmente faz com que você escreva funções menores e mais especializadas, aumentando o reuso de código e reduzindo a quantidade de bugs no sistema, mas utilizar boas práticas de programação também causam esse mesmo efeito com qualquer outra linguagem.</p>
 
-  <p class="text-justify">Eu posso argumentar que Clojure me ajudou a ver o perigo da mutabilidade espalhada por um sistema, e como isso me tornou um programador melhor e mais cuidadoso em Java ou em qualquer outra linguagem que eu use no dia a dia, limitando as partes móveis onde for realmente necessário e fazendo meu código ficar <i>thread-safe</i>[ref java-threads] sem perder legibilidade ou produtividade.</p>
+  <p class="text-justify">Eu posso argumentar que Clojure me ajudou a ver o perigo da mutabilidade espalhada por um sistema, e como isso me tornou um programador melhor e mais cuidadoso em Java ou em qualquer outra linguagem que eu use no dia a dia, limitando as partes móveis onde for realmente necessário e fazendo meu código ficar <i>thread-safe</i><bib entry="java-threads" /> sem perder legibilidade ou produtividade.</p>
 
   <p class="text-justify">Eu poderia dizer que Clojure tem um elegante sistema de macros, que permite que você adicione construções à linguagem que podem tornar seu código muito mais expressivo e elegante, ou mesmo criar DSLs conforme a sua necessidade sem ter que criar compiladores para isso, mas linguagens líderes de mercado não têm esse recurso e nosso trabalho continua sendo entregue com elas.</p>
 
