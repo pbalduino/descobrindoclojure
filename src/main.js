@@ -15,6 +15,7 @@ import ChapterQuote from '@/components/ChapterQuote.vue'
 import Author from '@/components/book/Author.vue'
 import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
+import GentleIntroduction from '@/components/book/GentleIntroduction.vue'
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
 import Presentation from '@/components/book/Presentation.vue'
 import Thanks from '@/components/book/Thanks.vue'
@@ -100,6 +101,15 @@ const routes = [
     component: Presentation,
     meta: {
       previous: '/warning',
+      next: '/gentleintro',
+      title: 'Apresentação'
+    }
+  },
+  {
+    path: '/gentleintro',
+    component: GentleIntroduction,
+    meta: {
+      previous: '/presentation',
       title: 'Apresentação'
     }
   },
