@@ -14,7 +14,7 @@
   <index entry="JVM" />
   <index entry="Hickey, Rich" />
 
-  <p class="text-justify">A linguagem Clojure foi criada por Rich Hickey e lançada em 2007, focando o desenvolvimento na JVM, mas hoje em dia é possível executar a linguagem sobre a CLR (a máquina virtual do .NET) e mesmo sobre alguma ::engine:: JavaScript, como o V8, que é a base do ::Node.js::.</p>
+  <p class="text-justify">A linguagem Clojure foi criada por Rich Hickey e lançada em 2007, focando o desenvolvimento na JVM, mas hoje em dia é possível executar a linguagem sobre a CLR (a máquina virtual do .NET) e mesmo sobre alguma <i>engine</i> JavaScript, como o V8, que é a base do ::Node.js::.</p>
 
   <index entry="concorrência"/>[index multithreading][index programação funcional][index JavaScript][index Scala]
   <p class="text-justify">É uma linguagem funcional, como o JavaScript e o Scala, e foi pensada para facilitar o desenvolvimento de aplicações que dependam de concorrência de processos e ::multithreading::[ref clojure-rationale], o que não significa que não possa ser usada para criar outras aplicações que não dependam disso. Sistemas concorrentes que podem ser bem difíceis de desenvolver com Java acabam se tornando mais simples e concisos.</p>

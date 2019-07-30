@@ -14,14 +14,14 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 li a {
-  color: #5881D8!important;
+  color: #274c9a!important;
 }
 
 h1 a {
@@ -41,7 +41,7 @@ h1 a {
 }*/
 
 .text-clojure-dark-blue {
-  color: #5881D8!important;
+  color: #274c9a!important;
 }
 
 .text-clojure-dark-green {

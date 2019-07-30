@@ -21,7 +21,7 @@
     <li>Como o livro está organizado</li>
     <li>Lista de discussão e código fonte</li>
   </ul>
-  <li><router-link to="/gentleintro">Uma introdução gentil ao Clojure</router-link></li>
+  <li><!-- router-link to="/gentleintro" -->Uma introdução gentil ao Clojure<!-- /router-link --></li>
   <ul>
     <li>O que é Clojure?</li>
     <li>Configurando o ambiente</li>
