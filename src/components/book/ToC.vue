@@ -50,6 +50,12 @@ E vem muito mais por aí
 </div>
 </template>
 
+<style>
+  a {
+    text-decoration: underline;
+  }
+</style>
+
 <script>
 export default {
   name: 'ToC'
