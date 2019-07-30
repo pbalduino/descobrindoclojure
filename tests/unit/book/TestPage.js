@@ -6,12 +6,12 @@ export default (component) => {
       propsData: {},
       stubs: {
         Bib: true,
-        Bio: true,
         Box: true,
         ChapterQuote: true,
         Index: true,
         Page: true,
         RouterLink: true,
+        Snippet: true,
       }
     })
     const lines = wrapper.text().split('\n')

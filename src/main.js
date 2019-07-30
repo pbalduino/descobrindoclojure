@@ -1,16 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueAnalytics from 'vue-analytics'
+import VueCodeHighlight from 'vue-code-highlight'
 
 import App from '@/App.vue'
 
 import BibliographyEntry from '@/components/BibliographyEntry.vue'
 import Box from '@/components/Box.vue'
+import ChapterQuote from '@/components/ChapterQuote.vue'
 import Home from '@/components/Home.vue'
 import IndexEntry from '@/components/IndexEntry.vue'
 import Page from '@/components/Page.vue'
 import Reader from '@/components/Reader.vue'
-import ChapterQuote from '@/components/ChapterQuote.vue'
+import Snippet from '@/components/Snippet.vue'
 
 import Author from '@/components/book/Author.vue'
 import Dedication from '@/components/book/Dedication.vue'
@@ -21,16 +23,17 @@ import Presentation from '@/components/book/Presentation.vue'
 import Thanks from '@/components/book/Thanks.vue'
 import Warning from '@/components/book/Warning.vue'
 
-
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter)
+Vue.use(VueCodeHighlight)
 
 Vue.component('bib', BibliographyEntry)
 Vue.component('index', IndexEntry)
 Vue.component('box', Box)
 Vue.component('chapter-quote', ChapterQuote)
 Vue.component('page', Page)
+Vue.component('snippet', Snippet)
 
 const isProd = process.env.NODE_ENV === 'production'
 
