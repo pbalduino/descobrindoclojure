@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "echo \"\\\"$(git describe --always)\\\"\" > src/assets/hash.json && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "prebuild": "echo \"\\\"$(git describe --always)\\\"\" > src/assets/hash.json && yarn test:unit",
+    "prebuild": "echo \"\\\"$(git describe --always)\\\"\" > src/assets/hash.json && yarn lint && yarn test:unit",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {

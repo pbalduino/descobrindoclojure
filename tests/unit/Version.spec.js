@@ -7,5 +7,6 @@ describe('Version.vue', () => {
       propsData: {}
     })
     expect(wrapper.text()).toMatch(/Versão: [0-9a-f]{7}/)
+    expect(wrapper.text()).not.toMatch(/(::|\*\*|%%)/)
   })
 })
