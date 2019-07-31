@@ -12,11 +12,12 @@ export default (component) => {
         Page: true,
         RouterLink: true,
         Snippet: true,
+        RefLabel: true,
       }
     })
     const lines = wrapper.text().split('\n')
     lines.map((line) => {
-      expect(line).not.toMatch(/(::|\*\*|%%|\[label|\[code|\[section|\[box|\[index|\[ref)/)
+      expect(line).not.toMatch(/(::|\*\*|%%|\[label|\[code|\[section|\[box|\[index|\[ref|\[quote|\[img|\[title)/)
     })
   })
 }

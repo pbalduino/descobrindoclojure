@@ -7,6 +7,12 @@
 </div>
 </template>
 
+<style>
+.card-heading {
+  padding: 0.5rem;
+}
+</style>
+
 <script>
 export default {
   props: ['title']

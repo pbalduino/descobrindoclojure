@@ -1,12 +1,12 @@
 <template>
 <div v-highlight>
-<pre class="language-javascript"><code><slot /></code></pre>
+<pre class="language-clojure"><code><slot /></code></pre>
 </div>
 </template>
 
 <style>
 @import url('/css/window.css');
-@import url('/css/brewer-light.css');
+@import url('/css/one-light.css');
 
 pre[class*="language-"].line-numbers {
 	position: relative;

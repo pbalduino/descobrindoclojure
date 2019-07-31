@@ -28,7 +28,7 @@
     <li>Explicando a sintaxe</li>
     <li>Explicando os parênteses</li>
   </ul>
-  <li>O REPL é tão importante...</li>
+  <li><router-link to="/repl">O REPL é tão importante...</router-link></li>
   <ul>
     <li>...que merece um capítulo a parte</li>
     <li>Alguns truques rápidos com o REPL</li>
