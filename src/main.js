@@ -8,6 +8,7 @@ import App from '@/App.vue'
 import BibliographyEntry from '@/components/BibliographyEntry.vue'
 import Box from '@/components/Box.vue'
 import ChapterQuote from '@/components/ChapterQuote.vue'
+import Comment from '@/components/Comment.vue'
 import Home from '@/components/Home.vue'
 import Image from '@/components/Image.vue'
 import IndexEntry from '@/components/IndexEntry.vue'
@@ -15,10 +16,12 @@ import LabelEntry from '@/components/LabelEntry.vue'
 import Page from '@/components/Page.vue'
 import Reader from '@/components/Reader.vue'
 import Snippet from '@/components/Snippet.vue'
+import Wip from '@/components/Wip.vue'
 
 import Author from '@/components/book/Author.vue'
 import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
+import Functions from '@/components/book/Functions.vue'
 import GentleIntroduction from '@/components/book/GentleIntroduction.vue'
 import OnlineVersion from '@/components/book/OnlineVersion.vue'
 import Presentation from '@/components/book/Presentation.vue'
@@ -32,13 +35,15 @@ Vue.use(VueRouter)
 Vue.use(VueCodeHighlight)
 
 Vue.component('bib', BibliographyEntry)
-Vue.component('index', IndexEntry)
-Vue.component('ref-label', LabelEntry)
 Vue.component('box', Box)
 Vue.component('chapter-quote', ChapterQuote)
+Vue.component('comment', Comment)
 Vue.component('image', Image)
+Vue.component('index', IndexEntry)
 Vue.component('page', Page)
+Vue.component('ref-label', LabelEntry)
 Vue.component('snippet', Snippet)
+Vue.component('wip', Wip)
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -127,7 +132,16 @@ const routes = [
     component: Repl,
     meta: {
       previous: '/gentleintro',
+      after: '/functions',
       title: 'O REPL é tão importante...'
+    }
+  },
+  {
+    path: '/functions',
+    component: Functions,
+    meta: {
+      previous: '/repl',
+      title: 'Descobrindo o poder das funções'
     }
   },
   {

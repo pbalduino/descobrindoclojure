@@ -8,11 +8,13 @@ export default (component) => {
         Bib: true,
         Box: true,
         ChapterQuote: true,
+        Comment: true,
         Index: true,
         Page: true,
+        RefLabel: true,
         RouterLink: true,
         Snippet: true,
-        RefLabel: true,
+        Wip: true,
       }
     })
     const lines = wrapper.text().split('\n')

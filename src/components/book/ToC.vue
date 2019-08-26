@@ -36,7 +36,27 @@
     <li>Criando uma aplicação de exemplo</li>
     <li>Modificando a aplicação através do REPL</li>
   </ul>
-  <li>Descobrindo o poder das funções</li>
+  <li><router-link to="/functions">Descobrindo o poder das funções</router-link></li>
+  <ul>
+    <li>O que são funções</li>
+    <li>Transformando dados</li>
+    <li>Funções anônimas</li>
+    <li>Dando nomes às funções</li>
+    <li>Sobrecarga de função e parâmetros opcionais</li>
+    <li>Documentação</li>
+    <li>Criando escopos locais</li>
+    <li>Escopos global, léxico e dinâmico</li>
+    <li>Contratos e condições</li>
+    <li>Destructuring</li>
+    <li>Usando recursão</li>
+    <li>Closures, currying e aplicações parciais</li>
+    <li>Memoização</li>
+    <li>Recursão mútua com trampoline</li>
+    <li>Composição de funções</li>
+    <li>Thread macros</li>
+    <li>Polimorfismo com multimethods</li>
+    <li>Polimorfismo com protocolos</li>
+  </ul>
   <li>Dados e metadados</li>
   <li>Namespaces para organizar o código</li>
   <li>Calculando o infinito com lazy sequences</li>
