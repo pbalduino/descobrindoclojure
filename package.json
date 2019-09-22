@@ -15,7 +15,9 @@
     "vue-analytics": "^5.17.0",
     "vue-code-highlight": "^0.7.2",
     "vue-router": "^3.0.6",
-    "yarn": "^1.17.3"
+    "yarn": "^1.17.3",
+    "lodash": "^4.17.13",
+    "lodash.defaultsdeep": "^4.6.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
@@ -27,6 +29,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
+    "eslint-utils": "^1.4.1",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   },
