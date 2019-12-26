@@ -3206,7 +3206,6 @@ Apesar das funções serem uma parte muito importante da linguagem, como você d
 </page>
 </template>
 
-
 <script>
 export default {
   name: 'Functions'

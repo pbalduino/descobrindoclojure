@@ -132,7 +132,7 @@ const routes = [
     component: Repl,
     meta: {
       previous: '/gentleintro',
-      after: '/functions',
+      next: '/functions',
       title: 'O REPL é tão importante...'
     }
   },
