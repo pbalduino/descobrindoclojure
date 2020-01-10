@@ -19,6 +19,7 @@ import Snippet from '@/components/Snippet.vue'
 import Wip from '@/components/Wip.vue'
 
 import Author from '@/components/book/Author.vue'
+import Data from '@/components/book/Data.vue'
 import Dedication from '@/components/book/Dedication.vue'
 import Foreword from '@/components/book/Foreword.vue'
 import Functions from '@/components/book/Functions.vue'
@@ -141,7 +142,16 @@ const routes = [
     component: Functions,
     meta: {
       previous: '/repl',
+      next: '/data',
       title: 'Descobrindo o poder das funções'
+    }
+  },
+  {
+    path: '/data',
+    component: Data,
+    meta: {
+      previous: '/functions',
+      title: 'Dados e metadados'
     }
   },
   {

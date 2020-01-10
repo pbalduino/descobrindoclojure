@@ -3020,7 +3020,7 @@ frase.class
 
 frase.count_words
 # NoMethodError: undefined method `count_words' for
-# "Meu cavalo come abobora":String
+# "Meu cavalo come abobora":String `
 </snippet>
 
 O método <code>count_words</code> não existe na implementação padrão da classe <code>String</code>, então vamos adicioná-lo.
@@ -3046,7 +3046,7 @@ Agora vamos tentar com um texto que não existia quando adicionamos o método:
 Já JavaScript resolve isso utilizando <i>prototipação</i>, que é a forma como a linguagem implementa Orientação a Objetos sem a necessidade de utilizar classes.
 
 <snippet language="javascript">
-var frase = "Meu cavalo come abóbora";
+const frase = "Meu cavalo come abóbora";
 
 typeof frase
 // "string"

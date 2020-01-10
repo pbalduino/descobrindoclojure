@@ -57,7 +57,9 @@
     <li>Polimorfismo com multimethods</li>
     <li>Polimorfismo com protocolos</li>
   </ul>
-  <li>Dados e metadados</li>
+  <li><router-link to="/data">Dados e metadados</router-link></li>
+  <ul>
+  </ul>
   <li>Namespaces para organizar o código</li>
   <li>Calculando o infinito com lazy sequences</li>
   <li>Integrando Clojure com Java</li>

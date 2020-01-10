@@ -15,7 +15,7 @@
     "lodash.defaultsdeep": "^4.6.1",
     "vue": "^2.6.10",
     "vue-analytics": "^5.17.0",
-    "vue-code-highlight": "^0.7.2",
+    "vue-code-highlight": "^0.7.4",
     "vue-router": "^3.0.6",
     "yarn": "^1.21.1"
   },
