@@ -28,6 +28,11 @@ h1 a {
   color: #f8f9fa!important;
 }
 
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 .bg-primary {
   background-color: #5881D8!important;
 }
