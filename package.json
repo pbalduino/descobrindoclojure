@@ -17,7 +17,7 @@
     "vue-analytics": "^5.17.0",
     "vue-code-highlight": "^0.7.4",
     "vue-router": "^3.0.6",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
